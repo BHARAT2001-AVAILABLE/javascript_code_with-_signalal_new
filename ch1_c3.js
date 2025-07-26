@@ -22,7 +22,7 @@
 const greetString = "HelloWorld";
 const greetStrings = "  Hello World  ";
 const firstChar = greetString[0];
-const lastChar = greetString[greetString.length-1];
+const lastChar = greetString[greetString.length-1]; 
 const lowerCaseGreet = greetString.toLowerCase();
 const trimGreet = greetStrings.trim();
 console.log(firstChar);

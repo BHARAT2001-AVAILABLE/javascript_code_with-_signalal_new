@@ -39,7 +39,7 @@
 const fruits =["apple","banana","cherry"];
 fruits.push("date");
 console.log(fruits);
-fruits.splice(2,1,"bluberry");
+fruits.splice(2,0,"bluberry");
 console.log(fruits); 
 fruits.splice(fruits.indexOf("banana"),1);
 console.log(fruits);
