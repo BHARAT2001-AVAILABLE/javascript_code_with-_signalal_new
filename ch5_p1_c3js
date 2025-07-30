@@ -1,0 +1,31 @@
+// You have a list of employees, each with their name, job title, and years since last training, all in a single string.
+
+// Your task is to:
+
+// Split and process each employee's information
+// Check if they have gone more than 2 years without training
+// If so, append a note indicating they need a training refresh
+// Display the result in a clear and readable format
+
+const employeeData = "Alice,Developer,3|Bob,Manager,1|Charlie,Designer,4";
+const employeeList = employeeData.split("|");
+
+employeeList.forEach(employee => {
+    // TODO: Tokenize the employee data and determine if training refresh is needed
+        //  console.log(employee)
+         
+         const [name,role,years] = employee.split(",");
+         const  number = parseInt(years);
+         let status="";
+        if (years>2) {
+            
+            status  ="need a  training refresh";
+        }
+        
+    // TODO: Display the result in format `Name: <name> - Role: <role> - Years since training: <years> - <training status>`
+    
+   let result = `Name: ${name} - Role: ${role} -  years since training: ${years} - ${status}`
+   console.log(result);
+     // let result = console.log(`Name: ${token.}`)
+
+});
